@@ -5,7 +5,7 @@ import json
 
 for each_file in os.listdir('input'):
     f_name, f_type = each_file.split('.')
-    if f_name != 'en':
+    if f_name != 'en' and f_type == 'json':
         pronunciations = dict()
         ln_conversions = dict()
         file = open('input/' + each_file, 'r')
